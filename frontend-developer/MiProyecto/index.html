@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Index</title>
+</head>
+<style>
+    :root {
+        --blanco-fondo: #F7F9F9;
+        --negro-fondo: #17202A;
+        --gris-letras-oscuras: #626567;
+        --gris-letras-claras: #BDC3C7;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+    }
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        background-color: black;
+    }
+    canvas {
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid '#0F0';
+    }
+    @media (max-width: 640px) {
+        canvas {
+            width: 100%;
+            height: 90px;
+        }
+    }
+</style>
+<body>
+    <div class="cascada">
+        <canvas id="canvas"></canvas>
+        <script src="proceso.js"></script>
+    </div>
+</body>
+</html>
